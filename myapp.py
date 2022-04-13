@@ -34,8 +34,9 @@ def data():
       return render_template('table.html', tables=[data.to_html()], titles=[''], message=input)
 
     else:
-      reddit_read_only = praw.Reddit(client_id ='kUNS_s0L_q1jzGI8EKqaDg',
-         client_secret ='nzV3XUQw5MEnZ1iNFfxzZRsMsc7jCg',
+      reddit_read_only = praw.Reddit(
+             client_id ='CLIENT_ID',
+         client_secret ='CLIENT_SECRET',
             user_agent = 'TOP 5 of subreddits by /u/PurpleExplorer_I')
 
       subreddit  = reddit_read_only.subreddit(input)
