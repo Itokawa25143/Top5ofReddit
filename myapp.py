@@ -37,7 +37,7 @@ def data():
       reddit_read_only = praw.Reddit(
              client_id ='CLIENT_ID',
          client_secret ='CLIENT_SECRET',
-            user_agent = 'TOP 5 of subreddits by /u/PurpleExplorer_I')
+            user_agent = 'USER_AGENT')
 
       subreddit  = reddit_read_only.subreddit(input)
       posts      = subreddit.top(limit=5)
