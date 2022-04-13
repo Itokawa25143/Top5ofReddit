@@ -57,4 +57,4 @@ def data():
       data = pd.read_csv(fileloc)
       return render_template('table.html', tables=[data.to_html()], titles=[''], message=input)
 
-app.run(host='localhost', port=5000)
+app.run(host='localhost', port=5000, debug=True)
