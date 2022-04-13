@@ -26,7 +26,7 @@ def data():
     filename = today + "-" + input + ".csv"
     fileloc = "static/" + filename
     pd.set_option('display.width', None)
-    pd.set_option('display.max_colwidth', -1)
+    pd.set_option('display.max_colwidth', None)
 
     if path.exists(fileloc):
       data = pd.read_csv(fileloc)
