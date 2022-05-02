@@ -17,7 +17,7 @@ def ask():
 @app.route("/data", methods = ['POST', 'GET'])
 def data():
   if request.method == 'GET':
-    return f"The URL /data is accessed directly. Try going to '/sub'."
+    return f"The URL /data is accessed directly. Try going to '/'."
 
   if request.method == 'POST':
     getinput = request.form['subreddit']
